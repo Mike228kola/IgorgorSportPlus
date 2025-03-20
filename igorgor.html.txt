@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGORGOR Sport Plus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .logo-container {
+            position: relative;
+            text-align: center;
+        }
+        .logo-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        .logo-sports {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .logo-sports span {
+            display: inline-block;
+            font-size: 24px;
+            margin: 0 5px;
+            color: #ffcc00;
+        }
+        .logo-sports::before {
+            content: "🏋️‍♂️";
+            position: absolute;
+            top: -30px;
+            left: -50px;
+            font-size: 48px;
+        }
+        .logo-sports::after {
+            content: "⚽";
+            position: absolute;
+            top: -30px;
+            right: -50px;
+            font-size: 48px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+        .services, .pricing, .news, .gallery, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-card, .price-card, .news-card, .gallery-card, .testimonial-card {
+            background-color: #e0f7ff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #005bb5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #004494;
+        }
+        .news-card img, .gallery-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .testimonial-card {
+            background-color: #ffcc00;
+            color: #333;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .calendar div {
+            background-color: #e0f7ff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-text">IGORGOR Sport Plus</div>
+            <div class="logo-sports">
+                <span>🏀</span>
+                <span>🎾</span>ы
+                <span>🏊‍♂️</span>
+            </div>
+        </div>
+        <p>Palīdzam sportistiem sasniegt jaunus augstumus!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">Par mums</a>
+        <a href="#services">Pakalpojumi</a>
+        <a href="#pricing">Cenas</a>
+        <a href="#news">Jaunumi</a>
+        <a href="#gallery">Galerija</a>
+        <a href="#testimonials">Atsauksmes</a>
+        <a href="#contact">Kontakti</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Kas mēs esam?</h2>
+        <p>Mēs esam profesionāļu komanda, kas palīdz sportistiem, piemēram, Jānim Bērziņam, atrast labākās iespējas attīstībai, uzlabot fizisko sagatavotību un līdzsvarot slodzi.</p>
+        <button>Uzzināt vairāk</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Ko mēs piedāvājam?</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Labāko sporta organizāciju meklēšana</h3>
+                <p>Palīdzam atrast organizācijas ar labākajiem apstākļiem (alga, atvaļinājums, bonusi).</p>
+                <p>Cena: Individuāli aprēķināta.</p>
+            </div>
+            <div class="service-card">
+                <h3>Treniņu procesa optimizēšana</h3>
+                <p>Grafika, fiziskās sagatavotības un emocionālā stāvokļa analīze.</p>
+                <p>Cena: No 100 €/mēnesī.</p>
+            </div>
+            <div class="service-card">
+                <h3>Fiziskās sagatavotības uzlabošana</h3>
+                <p>Rehabilitācija, konsultācijas ar fizioterapeitiem, medicīniskā atbalsta.</p>
+                <p>Cena: No 150 €/mēnesī.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2>Mūsu cenas</h2>
+        <div class="pricing">
+            <div class="price-card">
+                <h3>Organizāciju meklēšana</h3>
+                <p>Pamata: 50 €</p>
+                <p>Premium: 100 €</p>
+            </div>
+            <div class="price-card">
+                <h3>Treniņu optimizēšana</h3>
+                <p>Pamata: 100 €/mēnesī</p>
+                <p>Premium: 200 €/mēnesī</p>
+            </div>
+            <div class="price-card">
+                <h3>Fiziskā sagatavotība</h3>
+                <p>Pamata: 150 €/mēnesī</p>
+                <p>Premium: 300 €/mēnesī</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+        <h2>Sporta jaunumi</h2>
+        <div class="news">
+            <div class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="Jaunums 1">
+                <h3>Jauns rekords maratonā</h3>
+                <p>Sportists no Kenijas uzstādīja jaunu pasaules rekordu.</p>
+            </div>
+            <div class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="Jaunums 2">
+                <h3>Futbola turnīrs 2023</h3>
+                <p>Sākās gada lielākais futbola turnīrs.</p>
+            </div>
+            <div class="news-card">
+                <img src="https://via.placeholder.com/300x200" alt="Jaunums 3">
+                <h3>Olimpiskās spēles 2024</h3>
+                <p>Notiek intensīva sagatavošanās Olimpiskajām spēlēm Parīzē.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Veiksmīgu gadījumu galerija</h2>
+        <div class="gallery">
+            <div class="gallery-card">
+                <img src="https://via.placeholder.com/300x200" alt="Gadījums 1">
+                <h3>Jānis Bērziņš</h3>
+                <p>Uzlaboja fizisko sagatavotību un atrada jaunu komandu.</p>
+            </div>
+            <div class="gallery-card">
+                <img src="https://via.placeholder.com/300x200" alt="Gadījums 2">
+                <h3>Anna Kalniņa</h3>
+                <p>Sasniedza jaunus augstumus tenisā, pateicoties mūsu atbalstam.</p>
+            </div>
+            <div class="gallery-card">
+                <img src="https://via.placeholder.com/300x200" alt="Gadījums 3">
+                <h3>Māris Ozoliņš</h3>
+                <p>Atguva formu pēc traumas un atgriezās sportā.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Klientu atsauksmes</h2>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <p>"IGORGOR Sport Plus palīdzēja man atrast jaunu komandu ar lieliskiem apstākļiem!"</p>
+                <p>- Jānis Bērziņš</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Pateicoties viņu atbalstam, es varēju uzlabot savus rezultātus divkārtīgi!"</p>
+                <p>- Anna Kalniņa</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Profesionāla pieeja un individuāla uzmanība katram klientam."</p>
+                <p>- Māris Ozoliņš</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section>
+        <h2>Treniņu kalendārs</h2>
+        <div class="calendar">
+            <div>P</div>
+            <div>O</div>
+            <div>T</div>
+            <div>C</div>
+            <div>P</div>
+            <div>S</div>
+            <div>Sv</div>
+            <div>Treniņš</div>
+            <div>Atpūta</div>
+            <div>Treniņš</div>
+            <div>Treniņš</div>
+            <div>Atpūta</div>
+            <div>Treniņš</div>
+            <div>Treniņš</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Sazinieties ar mums!</h2>
+        <form>
+            <input type="text" placeholder="Jūsu vārds" required><br>
+            <textarea placeholder="Jūsu ziņa" required></textarea><br>
+            <button type="submit">Nosūtīt</button>
+        </form>
+        <p>Tālrunis: +371 12345678</p>
+        <p>Adrese: Rīga, Brīvības iela 123</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 IGORGOR Sport Plus. Visas tiesības aizsargātas.</p>
+    </footer>
+
+</body>
+</html>
